@@ -1,0 +1,155 @@
+body {
+  font-size: 12px;  
+}
+
+.home {
+  height: 216px;
+  width: 216px;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.home.one {
+  background-color: red;
+}
+
+.home .whitePanel {
+  background-color: white;
+  height: 160px;
+  width: 160px;
+  border-radius: 32px;
+  position: relative;
+}
+
+.home.two {
+  background-color: green;
+  right:0;
+}
+
+.home.three {
+  background-color: yellowgreen;
+  bottom:0;
+}
+
+.home.four {
+  background-color: blue;
+  bottom:0;
+  right:0;
+}
+
+.house {
+  height: 108px;
+  width: 108px;
+  background-color: yellow;
+  position: absolute;
+  left: 40%;
+  top: 40%;
+}
+
+
+
+.coin {
+  width: 30px;
+  height: 30px;
+  border-radius: 100%;
+  background-color: ;
+  position: absolute;
+  margin: 32px;
+}
+
+.home.one .coin{
+  background-color: red;
+}
+.home.two .coin{
+  background-color: green;
+}
+.home.three .coin{
+  background-color: yellowgreen;
+}
+.home.four .coin{
+  background-color: blue;
+}
+
+
+.coin.two {
+  right: 0;
+}
+.coin.three {
+  bottom:0;
+}
+.coin.four{
+  bottom:0;
+  right:0;
+}
+
+
+.coin1 {
+  
+  width:10px;
+  height:10px;
+  /* background-color: aqua; */
+  position: absolute;
+  z-index: 1000;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  transition: all 0.5s linear;
+  /* -webkit-transition:0.5s;
+  -moz-transition:0.5s; */
+}
+
+.coin1 img {
+  height: 28px;
+}
+
+
+
+
+
+
+
+
+
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
