@@ -73,13 +73,13 @@ body {
 }
 
 
-.coin.two {
+.panel2 {
   right: 0;
 }
-.coin.three {
+.panel3 {
   bottom:0;
 }
-.coin.four{
+.panel4{
   bottom:0;
   right:0;
 }

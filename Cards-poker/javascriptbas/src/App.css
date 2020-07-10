@@ -1,0 +1,22 @@
+.card{
+  height:120px;
+  width:82px;
+  margin:10px;
+  border:1px solid;
+  position:relative;
+  display:flex;
+  justify-content:center;
+  align-items: center;
+  background-color: white;
+  border-radius: 8px;
+}
+
+.number{
+  font-size: 22px;
+  font-weight: 400;
+}
+
+
+.number.H,.number.D{
+  color:#c81313
+}

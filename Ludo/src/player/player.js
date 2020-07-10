@@ -12,7 +12,7 @@ class Player {
         var element = document.querySelector("#"+pathId);
         var rect = element.getBoundingClientRect();
         
-        var coin1 = document.querySelector(activeCoin);
+        var coin1 = document.querySelector("#"+this.activeCoin);
         coin1.style.top = (rect.top + 14 ) +"px";
         coin1.style.right = (rect.right) +"px";
         coin1.style.bottom = (rect.bottom)+"px";
