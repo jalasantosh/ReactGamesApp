@@ -1,0 +1,14 @@
+.shadow{
+    -webkit-box-shadow: 10px 10px 64px -20px gray);
+    -moz-box-shadow: 10px 10px 64px -20px gray;
+    box-shadow: 10px 10px 64px -20px gray;
+}
+
+.panel {
+    background-color:white;
+    flex:1;
+    border-radius:32px;
+    max-width: 60vw;
+    max-height: 60vh;
+    height: 100%;
+}

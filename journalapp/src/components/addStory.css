@@ -1,0 +1,21 @@
+.wrapperClassName {
+    height: 300px;
+    
+}
+
+.editorClassName{
+    max-height:300px;
+    overflow: auto;
+    background-color: aliceblue;
+}
+
+/* .public-DraftEditor-content{
+    overflow: auto;
+    max-height: 300px;
+} */
+
+.addImage {
+    width: 150px;
+    height:150px;
+    border: 1px solid;
+}

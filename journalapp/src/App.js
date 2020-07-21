@@ -19,6 +19,9 @@ import { makeStyles, useTheme } from '@material-ui/core/styles';
 import { useSnackbar } from 'notistack';
 import { Button } from '@material-ui/core';
 import UserForm from './components/userForm';
+import { Switch, Route,Link } from 'react-router-dom';
+import AddStory from './components/addStory';
+
 
 const drawerWidth = 240;
 
@@ -86,23 +89,32 @@ function App(props) {
     <div>
       <div className={classes.toolbar} />
       <Divider />
+      
+      
       <List>
-        {['Inbox', 'Starred', 'Send email', 'Drafts'].map((text, index) => (
-          <ListItem button key={text}>
-            <ListItemIcon>{index % 2 === 0 ? <InboxIcon /> : <MailIcon />}</ListItemIcon>
-            <ListItemText primary={text} />
+        <Link to="/userForm">
+          <ListItem button key="userForm"> 
+            
+              <ListItemIcon> <InboxIcon /> </ListItemIcon>
+              <ListItemText primary="userForm" />
+            
+            
           </ListItem>
-        ))}
-      </List>
-      <Divider />
-      <List>
-        {['All mail', 'Trash', 'Spam'].map((text, index) => (
-          <ListItem button key={text}>
-            <ListItemIcon>{index % 2 === 0 ? <InboxIcon /> : <MailIcon />}</ListItemIcon>
-            <ListItemText primary={text} />
+        </Link>
+
+        <Link to="/addStory">
+          <ListItem button key="addStory"> 
+            
+              <ListItemIcon> <InboxIcon /> </ListItemIcon>
+              <ListItemText primary="Add Story" />
+            
+            
           </ListItem>
-        ))}
+        </Link>
+       
       </List>
+      
+      
     </div>
   );
 
@@ -160,9 +172,16 @@ function App(props) {
       </nav>
       <main className={classes.content}>
         <div className={classes.toolbar} />
-        <h3> Hello World...</h3>
-        <Button variant="contained" color="primary" onClick={onbuttonClick}> Click Me</Button>
-        <UserForm/>
+        <Switch>
+          <Route path="/userForm">
+            <UserForm/>
+          </Route>
+
+          <Route path ="/addStory">
+            <AddStory/>
+          </Route>
+          
+        </Switch>
       </main>
     </div>
   );
