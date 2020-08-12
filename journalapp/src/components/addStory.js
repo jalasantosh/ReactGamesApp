@@ -14,6 +14,7 @@ function AddStory(props){
         // wrapperClassName="wrapper-class"
         // editorClassName="editor-class"/>
         <div>
+            
             <div style={{height: 400}}>
                 <Editor
                     toolbarClassName="toolbarClassName"
